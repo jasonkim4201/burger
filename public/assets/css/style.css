@@ -1,0 +1,126 @@
+body {
+  background: black;
+}
+
+/*SLIDESHOW BACKGROUND*/
+
+/*Burgers*/
+
+.crossfadeBurger > figure {
+  animation: imageAnimation 105s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+  margin: 0 auto;
+}
+
+.crossfadeBurger > figure:nth-child(1) { background-image: url("../images/burgers/baconburger.jpg");
+}
+
+.crossfadeBurger > figure:nth-child(2) { 
+  animation-delay: 15s;
+  background-image: url("../images/burgers/burgerNonions.jpg");
+}
+
+.crossfadeBurger > figure:nth-child(3) { 
+  animation-delay: 30s;
+  background-image: url("../images/burgers/hamburgers-uhd-4k-wallpaper.jpeg");
+}
+
+.crossfadeBurger > figure:nth-child(4) { 
+  animation-delay: 45s;
+  background-image: url("../images/burgers/highresburger.jpg");
+}
+
+.crossfadeBurger > figure:nth-child(5) { 
+  animation-delay: 60s;
+  background-image: url("../images/burgers/juicyburger.jpg");
+}
+
+.crossfadeBurger > figure:nth-child(6) { 
+  animation-delay: 75s;
+  background-image: url("../images/burgers/pkburger.jpg");
+}
+
+.crossfadeBurger > figure:nth-child(7) { 
+  animation-delay: 90s;
+  background-image: url("../images/burgers/stackburgerflow.jpg");
+}
+ 
+
+/*Tacos*/
+/* .crossfadeTaco > figure {
+  animation: imageAnimation 105s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+  margin: 0 auto;
+}
+
+.crossfadeTaco > figure:nth-child(1) { background-image: url("../images/tacos/musk.jpg");
+}
+
+.crossfadeTaco > figure:nth-child(2) { 
+  animation-delay: 15s;
+  background-image: url("../images/tacos/chickentoco.jpg");
+}
+
+.crossfadeTaco > figure:nth-child(3) { 
+  animation-delay: 30s;
+  background-image: url("../images/tacos/grouptaco.jpg");
+}
+
+.crossfadeTaco > figure:nth-child(4) { 
+  animation-delay: 45s;
+  background-image: url("../images/tacos/726512_taco-backgrounds-tumblr_1920x1080_h.jpg");
+}
+
+.crossfadeTaco > figure:nth-child(5) { 
+  animation-delay: 60s;
+  background-image: url("../images/tacos/Whopperito.jpg");
+}
+
+.crossfadeTaco > figure:nth-child(6) { 
+  animation-delay: 75s;
+  background-image: url("../images/tacos/001_Tacos_de_carnitas\,_carne_asada_y_al_pastor.jpg");
+}
+.crossfadeTaco > figure:nth-child(7) { 
+  animation-delay: 90s;
+  background-image: url("../images/tacos/Tacos.jpg");
+} */
+
+@keyframes 
+  imageAnimation {  0% {
+   animation-timing-function: ease-in;
+   opacity: 0;
+  }
+   8% {
+   animation-timing-function: ease-out;
+   opacity: 1;
+  }
+   17% {
+   opacity: 1
+  }
+   25% {
+   opacity: 0
+  }
+   100% {
+   opacity: 0
+  }
+  }
