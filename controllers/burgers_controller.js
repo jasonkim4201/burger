@@ -47,7 +47,7 @@ updateStatus: function(req, res) {
 },
 // delete (or digest???) burger based on id (req.params.id)
 removeBurger: function(req, res) {
-  db.query("DELETE from burgers WHERE id = ?" [req.params.id], (error, dbBurger) => {
+  db.query("DELETE from burgers WHERE id = ?", [req.params.id], (error, dbBurger) => {
     if (error) {
       console.log(error);
       res.status(400).json(error);

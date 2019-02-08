@@ -13,6 +13,10 @@ body {
 
 #mainTitle {
   margin-top: 5%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../images/styles/gold.png)
 }
 
 #submitBtn {
@@ -21,6 +25,8 @@ body {
   border-color: goldenrod;
   margin-top: 20px;
 }
+
+
 
 #tacoBtn {
   margin-top: 50%;
