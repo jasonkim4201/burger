@@ -29,18 +29,6 @@ $(document).ready(function() {
     
   })
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   $("#submitBtn").on("click", function(event) {
     event.preventDefault();
     console.log("clicked");
@@ -50,14 +38,48 @@ $(document).ready(function() {
     }
     console.log(burgerInfo);
 
-    $.ajax({
+    /* $.ajax({
       url: "/api/burgers",
       method: "POST",
       data: burgerInfo
     }).then(function(foodData) {
       location.reload();
-    });
+    }); */
 
+    $("#burgerInput").val("");
   });
+
+
+  $("#tacoBtn").on("click", function() {
+    
+    $(".title").html("🌮Tacos🌮");
+    $(".form-control").attr("placeholder", "Add 🌮");
+
+
+    $(".crossfadeBurger").remove();
+
+    for (let i = 0; i < 7; i++) {
+      let figure = $("<figure>");
+      $(".crossfadeTaco").append(figure);
+    }
+
+    $("#tacoBtn").hide();
+
+    $.ajax({
+      url: "/api/burgers/",
+      method: "DELETE"
+    }).then(function(foodData) {
+      alert("No more burgers");
+    })
+  })
+
+
+
+
+
+
+
+
+
 
 })

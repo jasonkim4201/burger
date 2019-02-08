@@ -88,7 +88,7 @@ body {
  
 
 /*Tacos*/
-/* .crossfadeTaco > figure {
+.crossfadeTaco > figure {
   animation: imageAnimation 105s linear infinite 0s;
   backface-visibility: hidden;
   background-size: cover;
@@ -134,7 +134,7 @@ body {
 .crossfadeTaco > figure:nth-child(7) { 
   animation-delay: 90s;
   background-image: url("../images/tacos/Tacos.jpg");
-} */
+}
 
 @keyframes 
   imageAnimation {
