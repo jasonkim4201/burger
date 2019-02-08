@@ -1,0 +1,39 @@
+<div class="mt-5 mx-4 pt-5">
+
+
+  <div class="row">
+
+    {{!-- LEFT AREA --}}
+    <div class="col-4">
+      <br>
+      <ul class="list-group burgerZone"></ul>
+        {{#each burgerMenu}}
+          {{#unless devoured}}
+            <li class="list-group-item">
+              {{burger_name}}
+            </li>
+          {{/unless}}
+        {{/each}}
+    </div>
+
+    {{!-- CENTER AREA --}}
+    <div class="col-4">
+      <br>
+      <div class="card" id="mainTitle">
+        <div class="body">
+          <h1 class="display-5 text-center">Burgers</h1>
+        </div>
+      </div>
+      <div class="inputZone mx-auto">
+        <input class="form-control text-center" type="text" id="todo-input" placeholder="Add burger here!" />
+        <button class="btn btn-block" id="submitBtn">Click</button>
+      </div>
+      <div class="row">
+        <button class="btn btn-primary mx-auto" id="tacoBtn">🌮</button>
+      </div>
+    </div>
+
+
+    <div class="col-4"></div>
+  </div>
+</div>

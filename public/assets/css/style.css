@@ -2,7 +2,32 @@ body {
   background: black;
 }
 
+.burgerZone {
+  margin-top: 20%;
+}
+
+.inputZone {
+  margin-top: 30%;
+  width: 66%;
+}
+
+#mainTitle {
+  margin-top: 5%;
+}
+
+#submitBtn {
+  background: #212121;
+  color: gold;
+  border-color: goldenrod;
+  margin-top: 20px;
+}
+
+#tacoBtn {
+  margin-top: 50%;
+}
 /*SLIDESHOW BACKGROUND*/
+
+/*I will perfect this in the way I see fit*/
 
 /*Burgers*/
 
@@ -106,7 +131,8 @@ body {
 } */
 
 @keyframes 
-  imageAnimation {  0% {
+  imageAnimation {
+  0% {
    animation-timing-function: ease-in;
    opacity: 0;
   }
@@ -124,3 +150,4 @@ body {
    opacity: 0
   }
   }
+
