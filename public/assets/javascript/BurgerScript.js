@@ -10,6 +10,7 @@ $(document).ready(function() {
       url: `/api/burgers/${burgerId}`,
       method: "PUT"
     }).then(function (foodData) {
+      console.log(foodData);
       location.reload();
     });
 
@@ -38,15 +39,15 @@ $(document).ready(function() {
     }
     console.log(burgerInfo);
 
-    /* $.ajax({
+    $.ajax({
       url: "/api/burgers",
       method: "POST",
       data: burgerInfo
     }).then(function(foodData) {
       location.reload();
-    }); */
+    });
 
-    $("#burgerInput").val("");
+    /* $("#burgerInput").val(""); */
   });
 
 
